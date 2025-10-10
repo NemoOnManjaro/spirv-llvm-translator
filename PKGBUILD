@@ -9,8 +9,8 @@ pkgdesc="Tool and a library for bi-directional translation between SPIR-V and LL
 arch=(x86_64)
 url="https://github.com/KhronosGroup/SPIRV-LLVM-Translator"
 license=(LicenseRef-custom)
-depends=(gcc-libs glibc llvm-libs spirv-tools)
-makedepends=(git cmake llvm spirv-headers)
+depends=(gcc-libs glibc llvm-libs)
+makedepends=(git cmake llvm spirv-headers spirv-tools)
 checkdepends=(python clang)
 source=(git+${url}.git#tag=v$pkgver)
 sha256sums=('735001cb8622fc0dfcc4e2005299d185ebc4bb1970a98189a43da262c6c1dfe3')
