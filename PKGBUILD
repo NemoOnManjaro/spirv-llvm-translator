@@ -4,11 +4,11 @@
 
 pkgname=spirv-llvm-translator
 pkgver=21.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="LLVM <-> SPIR-V converter for compilers targeting SPIR-V"
 url="https://www.khronos.org/spirv/"
 arch=(x86_64)
-license=('Apache-2.0 WITH LLVM-exception')
+license=(NCSA)
 depends=(
   gcc-libs
   glibc

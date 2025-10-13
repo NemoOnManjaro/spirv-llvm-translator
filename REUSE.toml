@@ -26,4 +26,4 @@ path = [
     "*.patch",
 ]
 SPDX-FileCopyrightText = "spirv-llvm-translator contributors"
-SPDX-License-Identifier = "Apache-2.0 WITH LLVM-exception"
+SPDX-License-Identifier = "NCSA"
