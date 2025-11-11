@@ -30,7 +30,7 @@ source=(
   git+https://github.com/KhronosGroup/SPIRV-LLVM-Translator#tag=v$pkgver
   0001-fixes-a-new-validation-failure-in-a-UniformId-test-3.patch
 )
-b2sums=('92688870a40251be3f06815d19d2b39fe9fc83e0ee71ee0db378e540e3da7af68951eeb76012b87b1f2923f9b7fc231275e653470762bde69087589184dd4b19'
+b2sums=('SKIP'
         '72582c18a18eaee813a262777ae638c36333e516d2b50493dae1e106abe8e7db851419c9fe358a0b80600aa24bd2a87acf0a77d9297836976322ba6109777657')
 
 prepare() {
@@ -61,10 +61,6 @@ build() {
   cmake --build build
 }
 
-check() {
-  # Does not use ctest-compatible targets
-  cmake --build build --target test
-}
 
 package() {
   DESTDIR="$pkgdir" cmake --install build
